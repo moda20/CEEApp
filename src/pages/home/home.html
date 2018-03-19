@@ -1,0 +1,49 @@
+<ion-header no-border>
+  <ion-toolbar color="lighterblue">
+    <ion-navbar>
+      <ion-buttons left>
+        <button ion-button color="light" menuToggle icon-only="" clear>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>Acceuil</ion-title>
+    </ion-navbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img  src="assets/img/logo.jpg"/>
+    <ion-card-content>
+      <ion-card-title centered>
+        Club énergitique ENIM
+      </ion-card-title>
+      <p>
+        Club énergétique est un club scientifique faisant part de l’association ING.ENIM fondée en 2011 par des élèves ingénieurs, motivés et enthousiastes envisageant un meilleur futur pour un énergéticien.
+
+        Club énergétique est définie comme un trait d’union entre l’université et le monde professionnel. Son activité vise à doter les étudiants d’y mettent en pratique L’enseignement théorique et les différents connaissances qu’ils reçoivent en réalisant des projets professionnels, participer à des formations dans diverses domaines et faire des visites d’études guidées aux complexes industriels.
+
+      </p>
+    </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear large (click)="GoToFacebook()">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <div>Facebook</div>
+        </button>
+      </ion-col>
+      <!--      <ion-col>
+              <button ion-button icon-left clear large>
+                <ion-icon name="text"></ion-icon>
+                <div>4 Comments</div>
+              </button>
+            </ion-col>-->
+      <!--      <ion-col center text-center>
+              <ion-note>
+                11h ago
+              </ion-note>
+            </ion-col>-->
+    </ion-row>
+
+  </ion-card>
+</ion-content>

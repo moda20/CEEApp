@@ -1,0 +1,17 @@
+page-events-page {
+  .card-md, .card-ios{
+    border:none;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    p{
+      font-size: 1.8rem;
+    }
+    .item-md, .item-ios{
+      font-size: 1.8rem;
+      h2{
+        font-size: 1.9rem;
+      }
+    }
+  }
+}

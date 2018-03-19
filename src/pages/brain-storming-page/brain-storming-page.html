@@ -1,0 +1,17 @@
+<ion-header no-border>
+  <ion-toolbar color="lighterblue">
+    <ion-navbar>
+      <ion-buttons left>
+        <button ion-button color="light" menuToggle icon-only="" clear>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>Brainstorming et autres</ion-title>
+    </ion-navbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card *ngFor="let i of [1,2,3,4,5,6]">
+    <img src="assets/img/brain/img ({{i}}).jpg">
+  </ion-card>
+</ion-content>

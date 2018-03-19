@@ -1,0 +1,25 @@
+<ion-header no-border>
+  <ion-toolbar color="lighterblue">
+    <ion-navbar>
+      <ion-buttons left>
+        <button ion-button color="light" menuToggle icon-only="" clear>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>Nos Membres</ion-title>
+    </ion-navbar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let m of members">
+      <ion-thumbnail item-start>
+        <img src="assets/img/Members/{{m.img}}.jpg" imageViewer="assets/img/Members/{{m.img}}.jpg">
+      </ion-thumbnail>
+      <h2>{{m.name}}</h2>
+      <h3>{{m.pos}}</h3>
+    </ion-item>
+  </ion-list>
+</ion-content>

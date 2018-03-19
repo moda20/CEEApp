@@ -1,0 +1,105 @@
+<ion-header no-border>
+  <ion-toolbar color="G2foss">
+    <ion-navbar>
+      <ion-buttons left>
+        <button ion-button color="light" menuToggle icon-only="" clear>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>Info Dev</ion-title>
+    </ion-navbar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      Devloppée par :
+    </ion-card-header>
+    <img src="assets/img/g2foss.png">
+    <ion-card-content style="font-size: 1.3em;">
+      <p>
+        G2FOSS (Genral and Geographic Free Open Source Software) est un club de logiciels libres qui exerce ses activités au seinde l’ENIT, créée en 2008 par un groupe d’étudiants dynamiques, motivés et pleins d’enthousiaasme. L’objectif majeur du club est de promouvoir la culture et la philsophie du libre et de diffuser l’esprit de partage.
+        Le club ne cesse de se défier dans une stratégie innovatrice et prometteuse pour encadrer et former ses membres tout en assurant une formation solide au sein de ses 3 ateliers :
+
+      </p>
+      <ion-list no-padding margin-left>
+        <ion-item>
+          -	Atelier développement
+        </ion-item>
+        <ion-item>
+          -	Atelier sécurité
+        </ion-item>
+        <ion-item>
+          -	Atelier systèmes embraqués.
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear large color="G2foss" (click)="gotofb()">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <div>/g2foss</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear large color="G2foss" (click)="gotowebsite()">
+          <ion-icon name="md-globe"></ion-icon>
+          <div>g2foss.com</div>
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Développeur :
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-padding no-lines>
+        <ion-item-sliding>
+          <ion-item no-padding item-start>
+            <ion-avatar item-start>
+              <img src="assets/icon/profile pic.jpg">
+            </ion-avatar>
+            <h2>Mansour Med Kadhem</h2>
+            <p>September 8, 2017</p>
+          </ion-item>
+          <ion-item-options side="left" icon-start>
+            <button expandable  ion-button large color="lighterblue" (click)="gotomyface(fab)">
+              <ion-icon name="logo-facebook">
+
+              </ion-icon>
+            </button>
+            <button expandable  ion-button large color="G2foss" (click)="gotomygit(fab)">
+              <ion-icon name="logo-github">
+
+              </ion-icon>
+            </button>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
+      <!--<ion-fab #fab item-end>
+        <button item-end  ion-fab clear color="G2foss">
+          <ion-icon name="md-mail">
+
+          </ion-icon>
+        </button>
+        <ion-fab-list side="top">
+          <button ion-fab (click)="gotomyface(fab)">
+            <ion-icon name="logo-facebook">
+
+            </ion-icon>
+          </button>
+          <button ion-fab (click)="gotomygit(fab)">
+            <ion-icon name="logo-github">
+
+            </ion-icon>
+          </button>
+        </ion-fab-list>
+      </ion-fab>-->
+    </ion-card-content>
+  </ion-card>
+</ion-content>
